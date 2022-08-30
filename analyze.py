@@ -5,6 +5,7 @@ from rules.eval_used import *
 from rules.uncouple_method import *
 from rules.dummy_if import *
 from rules.uninitialized_attribute import *
+from rules.SuspiciousVariableName import *
 
 path = "input-code/"
 dir_list = os.listdir(path)
