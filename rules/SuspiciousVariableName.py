@@ -5,7 +5,7 @@ class DummyVarVisitor(WarningNodeVisitor):
     def visit_Assign(self, node: Assign):
         if isinstance(node.targets[0], Name):
             if len(node.targets[0].id) == 1:
-                self.addWarning('DummyVarWarning', node.lineno, 'this var is to short!')
+                self.addWarning('VariableWarning', node.lineno, 'this variable name is to short!')
 
 
 class DummyVarRule(Rule):
